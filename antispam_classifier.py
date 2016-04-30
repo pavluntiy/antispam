@@ -16,11 +16,11 @@ import numpy as np
 
 import zlib
 
-stemmer = SnowballStemmer("russian")
+# stemmer = SnowballStemmer("russian")
 
 import pymorphy2
 
-from nltk.tokenize import TweetTokenizer
+# from nltk.tokenize import TweetTokenizer
 
 from HTMLParser import HTMLParser
 
@@ -33,7 +33,7 @@ from sklearn.feature_extraction import DictVectorizer
 model = pickle.load(open("model.pickle", "r"))
 
 
-tokenizer = TweetTokenizer()
+# tokenizer = TweetTokenizer()
 
 class SpamHTMLParser(HTMLParser):
     def __init__(self):
